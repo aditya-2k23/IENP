@@ -9,3 +9,7 @@ function hideDialog() {
   dialogBox.classList.remove("dialog-visible");
   dialogBox.classList.add("dialog-hidden");
 }
+
+function login() {
+  window.location.href = "login.html";
+}

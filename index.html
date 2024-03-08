@@ -7,6 +7,8 @@
   <title>IENP - Indian Employee National Portal</title>
   <!-- Indian Employee National Portal -->
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/colored_emblem.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -84,8 +86,10 @@
       <h2>Welcome to the Chatbot</h2>
       <p>How can I help you today?</p>
       <input type="text" id="userInput" placeholder="Type your message here...">
-      <button onclick="send()">Send</button>
-      <button onclick="hideDialog()">❌</button>
+      <button onclick="login()">Send</button>
+      <button onclick="hideDialog()">
+        <ion-icon name="close"></ion-icon>
+      </button>
     </div>
   </div>
 
@@ -132,15 +136,34 @@
         </ul>
       </div>
     </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-first">
+        <p>&copy; 2021 IENP - Indian Employee National Portal | Designed by the students of VIT</p>
+      </div>
+      <div class="footer-bottom-second">
+        <p>Terms and Conditions | Privacy Policy</p>
+      </div>
+      <div class="footer-bottom-third">
+        <img src="img/colored_emblem.png" alt="">
+        <p>Government of India</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      </div>
+    </div>
   </footer>
-  </div>
-  <div class="logo" style="background-color:darkgray;">
-    <img src="img/emblem-of-india.png" class="img" alt="Logo">
-    <a href="#"></a>
-    <span>The Government Of India</span>
   </div>
 
   <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
