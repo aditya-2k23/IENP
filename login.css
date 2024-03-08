@@ -29,6 +29,7 @@ body {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  border-radius: 8px;
 }
 
 .container form input {
@@ -40,5 +41,61 @@ body {
 }
 
 img {
+  border-radius: 8px;
   object-fit: cover;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.img {
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 70%;
+  height: 70%;
+  animation: pop infinite 0.7s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    rotate: 0deg;
+  }
+
+  100% {
+    transform: scale(1);
+    rotate: 360deg;
+  }
+
+  50% {
+    transform: scale(1.2);
+    rotate: 180deg;
+  }
+
+  25% {
+    transform: scale(1.1);
+    rotate: 90deg;
+  }
+
+  75% {
+    transform: scale(1.1);
+    rotate: 270deg;
+  }
 }

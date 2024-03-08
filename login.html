@@ -17,11 +17,26 @@
       <input type="password" id="password" name="password" required><br><br>
       <input type="submit" value="Login">
     </form>
+    <img src="img/emblem-of-india.png" alt="emblem-of-india" class="img">
+    <p class="img">
+
+    </p>
     <div class="bot">
       <img src="img/bot.gif" alt="Image" style="align-self: flex-end;">
     </div>
   </div>
+
+  <div class="wrapper">
+    <button class="button">Click me</button>
   </div>
+
+  <script>
+    const button = document.querySelector('.button');
+    const img = document.querySelector('.img');
+    button.addEventListener('click', () => {
+      img.classList.toggle('show');
+    });
+  </script>
 </body>
 
 </html>

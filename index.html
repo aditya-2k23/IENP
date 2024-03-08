@@ -32,6 +32,8 @@
       </div>
 
       <section class="text-content">
+        <img src="img/bg.jpg" alt="">
+        <div class="text-align"></div>
         <h2>Vision:</h2>
         <div class="text">
           Government employees and departments often encounter challenges in navigating various processes of general
@@ -75,11 +77,68 @@
           enhance efficiency, and ultimately deliver better services to citizens while boosting employee satisfaction.
         </div>
       </section>
-    </div>
-    <div class="bot">
-      <img src="img/chatbot.png" alt="chatbot">
-    </div>
   </main>
+
+  <div id="dialog-box" class="dialog-hidden">
+    <div class="dialog-content">
+      <h2>Welcome to the Chatbot</h2>
+      <p>How can I help you today?</p>
+      <input type="text" id="userInput" placeholder="Type your message here...">
+      <button onclick="send()">Send</button>
+      <button onclick="hideDialog()">❌</button>
+    </div>
+  </div>
+
+  <div class="bot">
+    <img onclick="showDialog()" src="img/chatbot.png" alt="chatbot">
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">guidelines</a></li>
+          <li><a href="#">tutorials</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">guidelines</a></li>
+          <li><a href="#">tutorials</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">guidelines</a></li>
+          <li><a href="#">tutorials</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+      <div class="footer-wrapper">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">guidelines</a></li>
+          <li><a href="#">tutorials</a></li>
+          <li><a href="#">login</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <div class="logo" style="background-color:darkgray;">
+    <img src="img/emblem-of-india.png" class="img" alt="Logo">
+    <a href="#"></a>
+    <span>The Government Of India</span>
+  </div>
 
   <script src="script.js"></script>
 </body>

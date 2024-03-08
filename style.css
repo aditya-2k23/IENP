@@ -75,7 +75,6 @@ a {
 .navbar .links a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #333;
   font-size: 1.2rem;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -83,6 +82,10 @@ a {
 
 .navbar .links a:hover {
   color: #f1356d;
+}
+
+.navbar .links button a {
+  color: #fff;
 }
 
 .login button {
@@ -98,7 +101,20 @@ a {
 }
 
 .text-content {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 8rem;
+}
+
+.text-content .text-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-content .text {
+  margin: 1rem 0;
+  line-height: 2;
+  font-size: 1.1rem;
 }
 
 .text {
@@ -111,14 +127,116 @@ a {
   position: sticky;
   display: flex;
   justify-content: right;
-  align-items: center;
-  bottom: 1.2rem;
-  right: 1.2rem;
+  width: 90%;
   border-radius: 50%;
   margin: 1rem;
   z-index: 100;
 }
 
 .bot img {
+  display: flex;
+  justify-content: right;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+  bottom: 0;
+  position: relative;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-content .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .footer-content .footer-wrapper li {
+  margin: 1rem;
+  list-style: none;
+}
+
+footer .footer-content .footer-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 30px;
+  height: auto;
+}
+
+.dialog-hidden {
+  display: none;
+}
+
+.dialog-visible {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  background-color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 999;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dialog-content {
+  color: #fff;
+}
+
+.dialog-content button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #f1356d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dialog-content button:hover {
+  background-color: #f1356d;
+}
+
+#chatbot-img {
   cursor: pointer;
 }
