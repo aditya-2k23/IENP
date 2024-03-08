@@ -20,6 +20,11 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: #333;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -34,7 +39,26 @@ body {
   font-size: 2rem;
   font-weight: 600;
   padding: 1rem;
-  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.navbar .logo:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.navbar .logo img {
+  height: 80px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.navbar .logo span {
+  font-size: 1rem;
+  margin-left: 5px;
 }
 
 .navbar .links ul {
@@ -59,4 +83,16 @@ body {
 
 .navbar .links a:hover {
   color: #f1356d;
+}
+
+.login button {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #f1356d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
