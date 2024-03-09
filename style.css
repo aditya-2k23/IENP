@@ -6,11 +6,17 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background-color: #f1356d;
+  color: #fff;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #f4f4f4;
+  overflow-x: hidden;
 }
 
 .container {
@@ -98,6 +104,11 @@ a {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.login a:hover {
+  background-color: #f1356d;
+  color: #fff;
 }
 
 .text-content {
